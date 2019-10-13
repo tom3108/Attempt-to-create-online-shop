@@ -2,11 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def home_widok(*args, **kwargs):
+def home_widok(request, *args, **kwargs):
+	print(args, kwargs)
+	print(request.user)
 	return HttpResponse("<h1> Sklep z używanymi akcesoriami komputerowymi</h1>") #String html
-def kontakt(*args, **kwargs):
+def kontakt(request, *args, **kwargs):
 	return HttpResponse("<h1> Kontakt mailowy: t.madziara@gmail.com </h1>") #String html
-def oNas(*args, **kwargs):
+def oNas(request, *args, **kwargs):
 	return HttpResponse("<h1> Sklep z 20 letnią historią </h1>") #String html
-def media(*args, **kwargs):
+def media(request, *args, **kwargs):
 	return HttpResponse("<h1> Facebook, Instagram, Twitter </h1>") #String html
