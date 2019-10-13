@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from strony import views
+from strony.views import home_widok, kontakt, oNas, media
 
 urlpatterns = [
-    path('', views.home_widok, name='home_widok'),
+    path('', home_widok),
+    path('kontakt', kontakt),
+    path('onas', oNas),
+    path('media', media),
     path('admin/', admin.site.urls),
 ]
