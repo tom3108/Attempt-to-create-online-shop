@@ -57,7 +57,7 @@ ROOT_URLCONF = 'tomekdjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/Tomek/Desktop/Tomek_Django/proj_wir_sr/Src/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

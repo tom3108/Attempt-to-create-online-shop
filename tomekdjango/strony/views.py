@@ -5,7 +5,7 @@ from django.shortcuts import render
 def home_widok(request, *args, **kwargs):
 	print(args, kwargs)
 	print(request.user)
-	return HttpResponse("<h1> Sklep z używanymi akcesoriami komputerowymi</h1>") #String html
+	return render (request, "dom.html", {})
 def kontakt(request, *args, **kwargs):
 	return HttpResponse("<h1> Kontakt mailowy: t.madziara@gmail.com </h1>") #String html
 def oNas(request, *args, **kwargs):
