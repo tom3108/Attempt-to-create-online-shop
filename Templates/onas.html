@@ -10,4 +10,10 @@
 {{kody}}
 </p>
 
+<ul>
+{% for Element in kody %}
+	<li> {{ forloop.counter }} -- {{Element}} </li>
+{% endfor %}
+</ul>
+
 {%endblock %}
