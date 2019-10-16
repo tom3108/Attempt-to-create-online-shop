@@ -12,7 +12,15 @@
 
 <ul>
 {% for Element in kody %}
-	<li> {{ forloop.counter }} -- {{Element}} </li>
+	{% if Element > 15 %}
+		<h> Poniższa liczba jest większa od 15 </h>
+		<li> {{ forloop.counter }} -- {{Element}} </li>
+	{% else %}
+		<h> Poniższa liczba jest mniejsza od 15  </h>
+		<li> {{ forloop.counter }} -- {{Element}} </li>
+
+	{% endif %}
+	
 {% endfor %}
 </ul>
 
