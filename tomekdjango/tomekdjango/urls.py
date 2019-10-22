@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path
 
 from strony.views import home_widok, kontakt, oNas, media
+from produkty.views import opis
+
 
 urlpatterns = [
     path('', home_widok),
     path('kontakt', kontakt),
     path('onas', oNas),
     path('media', media),
+    path('opis', opis),
     path('admin/', admin.site.urls),
 ]
