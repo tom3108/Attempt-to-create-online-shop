@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from strony.views import home_widok, kontakt, oNas, media
-from produkty.views import opis
+from produkty.views import opis, produkt_utworz_widok
 
 
 urlpatterns = [
@@ -26,5 +26,6 @@ urlpatterns = [
     path('onas', oNas),
     path('media', media),
     path('opis', opis),
+    path('formularz', produkt_utworz_widok),
     path('admin/', admin.site.urls),
 ]
